@@ -1,0 +1,62 @@
+{
+  "ai_surveillance/__init__.py": {
+    "mtime": 1786476907.6978254,
+    "ast_hash": "41e3184380f6158ad46195cfd914876f",
+    "semantic_hash": "41e3184380f6158ad46195cfd914876f"
+  },
+  "ai_surveillance/camera.py": {
+    "mtime": 1786476907.6978836,
+    "ast_hash": "de5be1ba442d78689c3fe58894ff097a",
+    "semantic_hash": "de5be1ba442d78689c3fe58894ff097a"
+  },
+  "ai_surveillance/detection.py": {
+    "mtime": 1786476907.6979582,
+    "ast_hash": "0f1496795ffd6c14c0f7e4f09968ca61",
+    "semantic_hash": "0f1496795ffd6c14c0f7e4f09968ca61"
+  },
+  "ai_surveillance/motion.py": {
+    "mtime": 1786476907.6980195,
+    "ast_hash": "f93a8a7a640e91b6e3e9df905e872b3a",
+    "semantic_hash": "f93a8a7a640e91b6e3e9df905e872b3a"
+  },
+  "camera_test.py": {
+    "mtime": 1786476907.6981928,
+    "ast_hash": "9085965512801531d0e09a58824d1a03",
+    "semantic_hash": "9085965512801531d0e09a58824d1a03"
+  },
+  "legacy/camera_test_original.py": {
+    "mtime": 1786476907.6982865,
+    "ast_hash": "837b97682123fb3bd2dae9210d387a19",
+    "semantic_hash": "837b97682123fb3bd2dae9210d387a19"
+  },
+  "surveillance.py": {
+    "mtime": 1786476907.6986015,
+    "ast_hash": "ebbbd82000545f90a6029c9236b1d01a",
+    "semantic_hash": "ebbbd82000545f90a6029c9236b1d01a"
+  },
+  "tests/test_detection.py": {
+    "mtime": 1786476907.698694,
+    "ast_hash": "e25a141090a666492a88d542845d9271",
+    "semantic_hash": "e25a141090a666492a88d542845d9271"
+  },
+  "tests/test_motion.py": {
+    "mtime": 1786476907.6987615,
+    "ast_hash": "7fa8c2f5191788669d628e0d030449da",
+    "semantic_hash": "7fa8c2f5191788669d628e0d030449da"
+  },
+  "MODEL.md": {
+    "mtime": 1786476907.6975906,
+    "ast_hash": "10507211f99f8de64c5b08fc21547277",
+    "semantic_hash": "10507211f99f8de64c5b08fc21547277"
+  },
+  "README.md": {
+    "mtime": 1786476907.697663,
+    "ast_hash": "db869c2634912e636bcd6633c0daf395",
+    "semantic_hash": "db869c2634912e636bcd6633c0daf395"
+  },
+  "SETUP_REPORT.md": {
+    "mtime": 1786476907.6977282,
+    "ast_hash": "89a7b58b2102a9bace3f1c649a0d9d71",
+    "semantic_hash": "89a7b58b2102a9bace3f1c649a0d9d71"
+  }
+}

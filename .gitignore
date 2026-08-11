@@ -6,3 +6,8 @@ artifacts/*
 models/*
 !models/.gitkeep
 !models/*.sha256
+
+# Graphify's reproducible public outputs are tracked; local caches and
+# machine-specific interpreter metadata are not.
+graphify-out/cache/
+graphify-out/.*
