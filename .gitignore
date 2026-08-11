@@ -3,3 +3,6 @@ __pycache__/
 .venv/
 artifacts/*
 !artifacts/.gitkeep
+models/*
+!models/.gitkeep
+!models/*.sha256

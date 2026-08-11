@@ -10,6 +10,7 @@ explicitly copy them elsewhere.
 - Still-image capture with autofocus
 - A live OpenCV frame pipeline
 - Simple motion detection and annotated evidence frames
+- YOLO26n person and vehicle detection through ONNX Runtime
 - Unit tests that do not require camera hardware
 - Clean shutdown so the camera is released after every run
 
@@ -20,12 +21,24 @@ cd ~/ai-surveillance
 python3 surveillance.py doctor
 python3 surveillance.py capture --output artifacts/capture.jpg
 python3 surveillance.py monitor --seconds 10 --output-dir artifacts/monitor
+python3 surveillance.py detect-image --input artifacts/capture.jpg
+python3 surveillance.py detect --seconds 10
 python3 -m unittest discover -s tests -v
 ```
 
 The monitor is headless, so it works over SSH. It prints a JSON summary and
 writes `latest.jpg`, plus timestamped `motion-*.jpg` images when motion crosses
 the configured threshold.
+
+The AI detector writes annotated detection images and newline-delimited JSON
+events under `artifacts/detections/`. By default it reports people and common
+road vehicles; it does not perform face recognition or identity matching.
+Use `--confidence 0.35` if a particular scene needs more sensitivity than the
+default 0.50 threshold.
+
+The model file is intentionally excluded from Git. Setup installs Debian's
+`python3-onnxruntime` package and places the exported model at
+`models/yolo26n.onnx`.
 
 ## Useful options
 

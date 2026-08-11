@@ -36,3 +36,20 @@ left intact.
 - Python compilation check: passed
 
 Generated test images are under `artifacts/` and intentionally ignored by Git.
+
+## Object detection milestone
+
+Added 2026-08-12:
+
+- Model: YOLO26n, COCO pretrained, 640×640 ONNX export
+- Runtime: Debian `python3-onnxruntime`, CPUExecutionProvider, four threads
+- Enabled classes: person, car, motorcycle, bus, truck
+- Static-image inference: 133.26 ms; one person at 75.29% confidence
+- Eight-second live run: 43 frames, 43 detections, four evidence events
+- Mean live inference: 142.73 ms
+- End-to-end live rate including camera handling: 5.10 fps
+- Detection and motion unit tests: 6 passed
+- Model checksum verification: passed
+- Camera release after live inference: passed
+
+The model binary is ignored by Git and documented by its SHA-256 manifest.
